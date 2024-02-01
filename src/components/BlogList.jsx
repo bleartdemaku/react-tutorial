@@ -1,5 +1,3 @@
-import React, { useState } from "react";
-
 const BlogList = ({ blogs, title, handleDelete }) => {
   //   const blogs = props.blogs;
   //   const title = props.title;
