@@ -12,13 +12,13 @@ const Home = () => {
     {
       title: "Welcome party!",
       body: "lorem ipsum...",
-      author: "bleart",
+      author: "jon",
       id: 2,
     },
     {
       title: "Web dev top tips!",
       body: "lorem ipsum...",
-      author: "bleart",
+      author: "rina",
       id: 3,
     },
   ]);
@@ -26,6 +26,10 @@ const Home = () => {
   return (
     <div className="home">
       <BlogList blogs={blogs} title="All Blogs!" />
+      <BlogList
+        blogs={blogs.filter((blog) => blog.author === "bleart")}
+        title="Bleart's Blogs!"
+      />
     </div>
   );
 };
