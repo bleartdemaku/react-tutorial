@@ -31,19 +31,12 @@ const Home = () => {
   };
 
   useEffect(() => {
-    console.log("use effect hook ran");
-    console.log(name);
-  }, [name]);
+    
+  }, []);
 
   return (
     <div className="home">
       <BlogList blogs={blogs} title="All Blogs!" handleDelete={handleDelete} />
-      {/* <BlogList
-        blogs={blogs.filter((blog) => blog.author === "bleart")}
-        title="Bleart's Blogs!"
-      /> */}
-      <button onClick={() => setName("jon")}>Change name</button>
-      <p>{name}</p>
     </div>
   );
 };
